@@ -1,0 +1,6 @@
+
+开启巨帧 
+sudo ip link set dev enp4s0 mtu 9000
+
+从ROS包中提取图像
+rosrun image_view extract_images _sec_per_frame:=0.01 image:=cam0
