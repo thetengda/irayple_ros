@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(irayple_ros_pkg)
+project(irayple_ros)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -142,7 +142,7 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/irayple_ros_pkg_node.cpp)
 
 
-add_executable(multi_cam MultipleCamera.cpp)
+add_executable(multi_cam src/MultipleCamera.cpp)
 target_link_libraries(
     multi_cam
     ${catkin_LIBRARIES}
